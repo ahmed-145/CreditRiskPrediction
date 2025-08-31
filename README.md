@@ -46,12 +46,17 @@ This project implements a comprehensive credit risk prediction pipeline that:
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Live Demo
+**Try the deployed application**: [https://pdo-predictor.streamlit.app/](https://pdo-predictor.streamlit.app/)
+
+### Local Development
+
+#### Prerequisites
 ```bash
 pip install streamlit pandas numpy scikit-learn imbalanced-learn
 ```
 
-### Training the Model
+#### Training the Model
 ```bash
 python train_and_save_artifacts.py
 ```
@@ -64,7 +69,7 @@ This creates the required artifacts:
 - `encoders.pkl` - Label encoders for categorical variables
 - `metadata.pkl` - Date columns and categorical column metadata
 
-### Running the Application
+#### Running Locally
 ```bash
 streamlit run app.py
 ```
@@ -164,6 +169,31 @@ This system enables banks to:
 - Standardize risk assessment criteria
 - Improve portfolio quality through data-driven decisions
 - Maintain regulatory compliance through transparent feature engineering
+
+**Live Application**: The system is deployed at [https://pdo-predictor.streamlit.app/](https://pdo-predictor.streamlit.app/) for demonstration and testing purposes.
+
+## 🚀 Deployment
+
+The application is deployed on Streamlit Community Cloud:
+- **URL**: [https://pdo-predictor.streamlit.app/](https://pdo-predictor.streamlit.app/)
+- **Platform**: Streamlit Community Cloud
+- **Deployment**: Automatic deployment from GitHub repository
+- **Environment**: Python 3.9+ with required dependencies
+
+### Local Deployment
+```bash
+# Clone repository
+git clone https://github.com/ahmed-145/credit-risk-prediction.git
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Train model (creates .pkl artifacts)
+python train_and_save_artifacts.py
+
+# Run application
+streamlit run app.py
+```
 
 ## 📋 Future Enhancements
 

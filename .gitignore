@@ -23,3 +23,12 @@ env/
 # IDE files
 .vscode/
 .idea/
+<<<<<<< HEAD
+=======
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+>>>>>>> 9507a3a2e8924590e8e3ed578bfed84943e062bd
